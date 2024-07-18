@@ -1,1 +1,4 @@
 .DS_Store
+test_environment.py
+safety/utils/__pycache__
+safety/lesson1/__pycache__
