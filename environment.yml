@@ -1,0 +1,15 @@
+name: safety
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - h5py
+  - ipykernel
+  - pip
+  - pip:
+    - py3nvml
+    - ./whl_files/torchvision-0.10.0-cp39-cp39-macosx_11_0_arm64.whl
+    - ./whl_files/robustness-1.2.1.post2-py3-none-any.whl
