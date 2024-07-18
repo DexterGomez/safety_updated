@@ -11,7 +11,8 @@ IMAGENET_DENORMALIZE = Compose([
     Normalize(mean=[0, 0, 0], std=[1/0.229, 1/0.224, 1/0.225]),
     Normalize(mean=[-0.485, -0.456, -0.406], std=[1, 1, 1])
 ])
-torch.set_default_tensor_type(torch.cuda.FloatTensor)
+
+#torch.set_default_tensor_type(torch.cuda.FloatTensor)
 
 with open('safety/utils/imagenet_labels.json', 'r') as f:
     IMAGENET_LABELS = json.load(f)

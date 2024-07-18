@@ -4,7 +4,8 @@ import torch.nn.functional as F
 from robustness import datasets, model_utils
 from safety.utils import utils
 from torchvision import models
-torch.set_default_tensor_type(torch.cuda.FloatTensor)
+
+#torch.set_default_tensor_type(torch.cuda.FloatTensor)
 
 
 def test_untargeted_attack(untargeted_adv_attack, eps=0.01):
